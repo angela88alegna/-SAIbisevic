@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <link rel="stylesheet" href="test.css">
+
+
+   
+
+  <script src=" https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var config = {
+          apiKey: "AIzaSyASgCNcEFSn8vJpojariTBcGVN8flqNFiE",
+          authDomain: "tryte-77bc0.firebaseapp.com",
+          databaseURL: "https://tryte-77bc0.firebaseio.com",
+          projectId: "tryte-77bc0",
+          storageBucket: "tryte-77bc0.appspot.com",
+          messagingSenderId: "509791729640",
+          appId: "1:509791729640:web:832687eeea1f4fc784565d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(config);
+        const db= firebase.firestore();
+    
+
+</script>
+</head>
+<body>
+
+
+    <div class="inputList">
+     
+    <input type="text" id="date" placeholder="date">
+    <input type="text" id="fund_id" placeholder="fund ID">
+    <input type="text" id="fund_name" placeholder="fund name">
+    <input type="text" id="index" placeholder="index">
+    <input type="text" id="nb_alerts" placeholder="alerts number">
+    <input type="text" id="report_status" placeholder="report status">
+    <input type="text" id="share_class_id" placeholder="share class id">
+    <input type="text" id="share_class_name" placeholder="share class name">
+    <input type="text" id="subfund_id" placeholder="subfund ID">
+    <input type="text" id="subfund_name" placeholder="subfund name">
+    
+  </div>
+    <button id="button">add entry</button>
+
+    
+
+    
+    <ul id="list">
+
+    </ul>
+
+      
+
+    <script src="app.js"></script>
+</body>
+</html>
